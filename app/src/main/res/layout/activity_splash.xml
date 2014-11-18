@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/splashLayout"
+    android:orientation="vertical"
+    android:transitionName="transition_splash">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueTop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#3F51B5">
+    </ImageView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Material"
+        android:id="@+id/materialTXT"
+        android:textStyle="bold"
+        android:textColor="#e8eaf6"
+        android:gravity="center"
+        android:layout_marginTop="-40dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Notes"
+        android:id="@+id/notesTXT"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
