@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- A CardView that contains a TextView -->
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/editNoteLayout"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:background="#e8eaf6"
+        android:transitionName="noteEdit">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#3F51B5">
+
+                <TextView
+                android:id="@+id/filename"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textColor="#e8eaf6"
+                android:text="Example"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:elevation="1dp"
+                    android:paddingLeft="35dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/delBTN"
+                    android:background="@android:drawable/ic_menu_delete"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:elevation="10dp"
+                    android:translationZ="10dp"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/ic_ab_drawer_mask"
+                    android:contentDescription="@string/noteIcon"
+                    android:layout_margin="0dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_ab_drawer_mask" />
+
+            </RelativeLayout>
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="This is where some preview text for the note will go"
+            android:id="@+id/previewText"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
