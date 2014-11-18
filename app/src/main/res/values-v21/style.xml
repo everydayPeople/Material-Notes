@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- inherit from the material theme -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+
+        <!-- Main theme colors -->
+
+        <item name="android:colorPrimary">#3F51B5</item>
+        <item name="android:colorPrimaryDark">#303F9F</item>
+
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+
+
+        <!-- Flag indicating whether this window's Action Bar should overlay -->
+        <item name="android:windowActionBarOverlay">false</item>
+
+        <!-- Flag indicating whether this window's Action Bar content should overlay -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
